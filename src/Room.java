@@ -4,6 +4,7 @@ public class Room {
     private Room south;
     private Room east;
     private Room west;
+    private String description;
 
 
 
@@ -45,6 +46,14 @@ public class Room {
 
     Room getWest (){
         return west;
+    }
+
+    void setDescription () {
+        this.description = description;
+    }
+
+    String getDescription (){
+        return description;
     }
 
 
