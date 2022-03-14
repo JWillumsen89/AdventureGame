@@ -1,5 +1,8 @@
+import java.util.Scanner;
+
 public class Adventure {
   Room room1, room2, room3, room4, room5, room6, room7, room8, room9, currentRoom;
+  Scanner in = new Scanner(System.in);
 
   public static void main(String[] args) {
     new Adventure().go();
@@ -9,9 +12,11 @@ public class Adventure {
     String name;
     String description;
 
+    gameStartUp();
+
     //Room1
-    name = "Rum 1";
-    description = "Du er i grottens start";
+    name = "Cave entrance";
+    description = "You have entered a dark, creepy cage!";
     room1 = new Room(name, description);
 
     //Room 2
@@ -109,6 +114,27 @@ public class Adventure {
     room9.setSouth(null);
     room9.setWest(room8);
     room9.setNorth(room6);
+
+  }
+
+  void gameStartUp() {
+    System.out.println("Welcome to this game!");
+    System.out.println("Main menu: ");
+    System.out.println("1) Start game");
+    System.out.println("2) Help");
+    System.out.println("3) Exit");
+    System.out.print("Enter decision: ");
+    int decision = in.nextInt();
+
+    switch (decision) {
+      case 1 -> System.out.println("Starting");
+      case 2 -> System.out.println("Help menu");//help();
+      case 3 -> System.exit(0);
+
+    }
+  }
+
+  void userInterface() {
 
   }
 }

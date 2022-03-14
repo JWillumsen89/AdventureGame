@@ -1,64 +1,60 @@
 public class Room {
-    private String roomName;
-    private String description;
-    private Room north;
-    private Room south;
-    private Room east;
-    private Room west;
+  private String roomName;
+  private String description;
+  private Room north;
+  private Room south;
+  private Room east;
+  private Room west;
 
-    Room(String roomName, String description) {
+  Room(String name, String description) {
 
-    }
+  }
 
+  void setRoomName(String roomName) {
+    this.roomName = roomName;
+  }
 
-    void setRoomName (String roomName){
-        this.roomName = roomName;
-    }
+  String getRoomName() {
+    return roomName;
+  }
 
-    String getRoomName (){
-        return roomName;
-    }
+  void setNorth(Room north) {
+    this.north = north;
+  }
 
-    void setNorth (Room north){
-        this.north = north;
-    }
+  Room getNorth() {
+    return north;
+  }
 
-    Room getNorth (){
-        return north;
-    }
+  void setSouth(Room south) {
+    this.south = south;
+  }
 
-    void setSouth (Room south){
-        this.south = south;
-    }
+  Room getSouth() {
+    return south;
+  }
 
-    Room getSouth (){
-        return south;
-    }
+  void setEast(Room east) {
+    this.east = east;
+  }
 
-    void setEast (Room east){
-        this.east = east;
-    }
+  Room getEast() {
+    return east;
+  }
 
-    Room getEast (){
-        return east;
-    }
+  void setWest(Room west) {
+    this.west = west;
+  }
 
-    void setWest (Room west){
-        this.west = west;
-    }
+  Room getWest() {
+    return west;
+  }
 
-    Room getWest (){
-        return west;
-    }
+  void setDescription() {
+    this.description = description;
+  }
 
-    void setDescription () {
-        this.description = description;
-    }
-
-    String getDescription (){
-        return description;
-    }
-
-
-
+  String getDescription() {
+    return description;
+  }
 }
