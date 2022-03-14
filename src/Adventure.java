@@ -4,15 +4,54 @@ public class Adventure {
     }
 
   void go() {
-    Room room1 = new Room();
-    Room room2 = new Room();
-    Room room3 = new Room();
-    Room room4 = new Room();
-    Room room5 = new Room();
-    Room room6 = new Room();
-    Room room7 = new Room();
-    Room room8 = new Room();
-    Room room9 = new Room();
+      String name;
+      String description;
+
+    //Room1
+      name = "Rum 1";
+      description = "Du er i grottens start";
+    Room room1 = new Room(name, description);
+
+    //Room 2
+    name = "Rum 1";
+    description = "Du er i grottens start";
+    Room room2 = new Room(name, description);
+
+    //Room 3
+    name = "Rum 1";
+    description = "Du er i grottens start";
+    Room room3 = new Room(name, description);
+
+    //Room 4
+    name = "Rum 1";
+    description = "Du er i grottens start";
+    Room room4 = new Room(name, description);
+
+    //Room 5
+    name = "Rum 1";
+    description = "Du er i grottens start";
+    Room room5 = new Room(name, description);
+
+    //Room 6
+    name = "Rum 1";
+    description = "Du er i grottens start";
+    Room room6 = new Room(name, description);
+
+    //Room 7
+    name = "Rum 1";
+    description = "Du er i grottens start";
+    Room room7 = new Room(name, description);
+
+    //Room 8
+    name = "Rum 1";
+    description = "Du er i grottens start";
+    Room room8 = new Room(name, description);
+
+    //Room 9
+    name = "Rum 1";
+    description = "Du er i grottens start";
+    Room room9 = new Room(name, description);
+
 
     Room currentRoom = room1;
     //room 1

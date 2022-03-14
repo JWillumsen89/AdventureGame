@@ -1,18 +1,21 @@
 public class Room {
-    private Room roomName;
+    private String roomName;
+    private String description;
     private Room north;
     private Room south;
     private Room east;
     private Room west;
-    private String description;
+
+    Room(String roomName, String description) {
+
+    }
 
 
-
-    void setRoomName (Room roomName){
+    void setRoomName (String roomName){
         this.roomName = roomName;
     }
 
-    Room getRoomName (){
+    String getRoomName (){
         return roomName;
     }
 
