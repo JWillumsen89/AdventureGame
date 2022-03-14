@@ -4,8 +4,7 @@ public class Room {
     private Room south;
     private Room east;
     private Room west;
-
-
+    //TODO String description missing
 
     void setRoomName (Room roomName){
         this.roomName = roomName;
@@ -46,7 +45,5 @@ public class Room {
     Room getWest (){
         return west;
     }
-
-
 
 }
