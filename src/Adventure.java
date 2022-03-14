@@ -40,40 +40,52 @@ public class Adventure {
     room3 = new Room(name, description);
 
     //Room 4
-    name = "Room 4";
+    name = "SLOPE INTO THE DARK";
     description = """
-        
-        """;
+        A steep slope where lots of bats are staring at you from the ceiling!
+        Small ticking noise are coming from the scorpions crawling on the walls.
+        There is a weird smell here, rot, death and something you cant describe""";
     room4 = new Room(name, description);
 
     //Room 5
-    name = "Final room";
-    description = "Du er i grottens start";
+    name = "CEREMONIAL ROOM";
+    description = """
+    You entered a ceremonial room!
+    Suddenly a loud smash and roar surprises you!!! A crazy looking beast, with shiny yellow eyes, just threw a bust of some sort after you and roared!
+    It runs towards you and throws across the room.
+    Back on your feet, you grab your weapon and prepare for a hard fight""";
     room5 = new Room(name, description);
 
     //Room 6
     name = "WATERFALL";
     description = """
         Water erupting from a small crack in the ceiling creates a small pond that seems to be continuing into a small stream that disappears through the crack in the cave floor.
-        By the water there a very oddly skeleton, that thankfully is not alive. Because those pointer teeth and sharp claws, must have injured somebody badly. 
-        Thorn fabric and a dagger is beside it. Someone barely escaped this still alive. 
-        """;
+        By the water there a very oddly skeleton, that thankfully is not alive. Because those pointer teeth and sharp claws, must have injured somebody badly.
+        Thorn fabric and a dagger is beside it. Someone barely escaped this still alive.""";
     room6 = new Room(name, description);
 
     //Room 7
-    name = "Rum 7";
-    description = "Du er i grottens start";
+    name = "SKELETON ROOM";
+    description = """
+        DEATH! Lots of kills have been committed here! Skeletons all around, centipedes crawling in and out of nearby skull and the disgusting smell is making it hard to breath!
+        Bones are breaking because you cant take a step without stepping on them.
+        Then!! Goosebumps hits you when you suddenly hear a roar from deeper within the cave.""";
     room7 = new Room(name, description);
 
     //Room 8
-    name = "Rum 8";
-    description = "Du er i grottens start";
+    name = "CAVE AND CAGES";
+    description = """
+        Everything suddenly changes.
+        This area is nicely dugout, there is monuments, torches that light up the room and cages.
+        But something is off, some of the monuments are smashed, claws marks, old blood marks and a weird quite atmosphere.
+        In the corner is a big cage, broken, smashed actually! Something big was here!""";
     room8 = new Room(name, description);
 
     //Room 9
     name = "STAIRWAY";
     description = """
-        """;
+        Handmade creepy stairs!
+        Very slippery and small.""";
     room9 = new Room(name, description);
 
 
