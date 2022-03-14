@@ -1,59 +1,61 @@
 public class Adventure {
-    public static void main(String[] args) {
-        new Adventure().go();
-    }
+  Room room1, room2, room3, room4, room5, room6, room7, room8, room9, currentRoom;
+
+  public static void main(String[] args) {
+    new Adventure().go();
+  }
 
   void go() {
-      String name;
-      String description;
+    String name;
+    String description;
 
     //Room1
-      name = "Rum 1";
-      description = "Du er i grottens start";
-    Room room1 = new Room(name, description);
+    name = "Rum 1";
+    description = "Du er i grottens start";
+    room1 = new Room(name, description);
 
     //Room 2
     name = "Rum 2";
     description = "Du er i grottens start";
-    Room room2 = new Room(name, description);
+    room2 = new Room(name, description);
 
     //Room 3
     name = "Rum 3";
     description = "Du er i grottens start";
-    Room room3 = new Room(name, description);
+    room3 = new Room(name, description);
 
     //Room 4
     name = "Rum 4";
     description = "Du er i grottens start";
-    Room room4 = new Room(name, description);
+    room4 = new Room(name, description);
 
     //Room 5
     name = "Rum 5";
     description = "Du er i grottens start";
-    Room room5 = new Room(name, description);
+    room5 = new Room(name, description);
 
     //Room 6
     name = "Rum 6";
     description = "Du er i grottens start";
-    Room room6 = new Room(name, description);
+    room6 = new Room(name, description);
 
     //Room 7
     name = "Rum 7";
     description = "Du er i grottens start";
-    Room room7 = new Room(name, description);
+    room7 = new Room(name, description);
 
     //Room 8
     name = "Rum 8";
     description = "Du er i grottens start";
-    Room room8 = new Room(name, description);
+    room8 = new Room(name, description);
 
     //Room 9
     name = "Rum 9";
     description = "Du er i grottens start";
-    Room room9 = new Room(name, description);
+    room9 = new Room(name, description);
 
 
-    Room currentRoom = room1;
+    currentRoom = room1;
     //room 1
     room1.setNorth(null);
     room1.setEast(room2);
