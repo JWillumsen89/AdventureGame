@@ -15,33 +15,49 @@ public class Adventure {
     gameStartUp();
 
     //Room1
-    name = "Cave entrance";
-    description = "You have entered a dark, creepy cage!";
+    name = "CAVE ENTRANCE";
+    description = """
+        You have entered a dark cage with water dripping from the ceiling, shiny eyes in the distance from, what seems like hundreds of small animals, bats maybe!
+        There is also some noise, a distant growling and something that sounds like footsteps, but hard to tell what this is and where its coming from.""";
     room1 = new Room(name, description);
 
     //Room 2
-    name = "Rum 2";
-    description = "Du er i grottens start";
+    name = "SMALL PATH";
+    description = """
+        Spiderwebs everywhere and you cant barely see anything in the dark.
+        You are also stepping in something that seems to be sticking to you boots. Mud, blood or something else disgusting.
+        Goosebumps suddenly wanders all over your buddy, a scream from something erupts from nothing in the distance!""";
     room2 = new Room(name, description);
 
     //Room 3
-    name = "Rum 3";
-    description = "Du er i grottens start";
+    name = "DUGOUT AREA";
+    description = """
+        A small torch, hanging from the wall, brings a little bit of light to this weird, dugout room.
+        Rats screaming and running away from almost every small corner or hidden place and leave you with brief silence.
+        Theres a small oddly looking table, containing the rest of what seems to have been someones lunch and very small leather bag, someone left in hurry!.
+        After looking a round, the silence gets interrupted by the same distant growling you have been hearing earlier""";
+
     room3 = new Room(name, description);
 
     //Room 4
-    name = "Rum 4";
-    description = "Du er i grottens start";
+    name = "Room 4";
+    description = """
+        
+        """;
     room4 = new Room(name, description);
 
     //Room 5
-    name = "Rum 5";
+    name = "Final room";
     description = "Du er i grottens start";
     room5 = new Room(name, description);
 
     //Room 6
-    name = "Rum 6";
-    description = "Du er i grottens start";
+    name = "WATERFALL";
+    description = """
+        Water erupting from a small crack in the ceiling creates a small pond that seems to be continuing into a small stream that disappears through the crack in the cave floor.
+        By the water there a very oddly skeleton, that thankfully is not alive. Because those pointer teeth and sharp claws, must have injured somebody badly. 
+        Thorn fabric and a dagger is beside it. Someone barely escaped this still alive. 
+        """;
     room6 = new Room(name, description);
 
     //Room 7
@@ -55,8 +71,9 @@ public class Adventure {
     room8 = new Room(name, description);
 
     //Room 9
-    name = "Rum 9";
-    description = "Du er i grottens start";
+    name = "STAIRWAY";
+    description = """
+        """;
     room9 = new Room(name, description);
 
 
@@ -132,6 +149,11 @@ public class Adventure {
       case 3 -> System.exit(0);
 
     }
+  }
+
+  void help() {
+    System.out.println("Help menu:");
+    System.out.println();
   }
 
   void userInterface() {
