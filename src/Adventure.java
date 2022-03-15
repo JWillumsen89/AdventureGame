@@ -6,7 +6,7 @@ public class Adventure {
   private String playerName;
   Scanner in = new Scanner(System.in);
   private boolean gameRunning = true;
-  Environment environment = new Environment();
+  //Environment environment = new Environment();
 
 
   public static void main(String[] args) throws IOException {
