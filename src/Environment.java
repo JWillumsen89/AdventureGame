@@ -17,16 +17,16 @@ public class Environment {
 
 
   public String descripRoom1() throws IOException {
-    String str1 = Files.readString(descripRoom1);
-    System.out.println(str1);
-    return str1;
+    String str = Files.readString(descripRoom1);
+    System.out.println(str);
+    return str;
   }
 
 
   public String descripRoom2() throws IOException {
-    String str2 = Files.readString(descripRoom2);
-    System.out.println(str2);
-    return str2;
+    String str = Files.readString(descripRoom2);
+    System.out.println(str);
+    return str;
   }
 
 
