@@ -142,17 +142,7 @@ public class Adventure {
         | ) \\ \\__| (____/\\   | |   | ) \\ \\__| (___) |      | )   ( || (__/  )  \\   /  | (____/\\| )  \\  |   | |   | (___) || ) \\ \\__| (____/\\
         |/   \\__/(_______/   )_(   |/   \\__/(_______)      |/     \\|(______/    \\_/   (_______/|/    )_)   )_(   (_______)|/   \\__/(_______/""");
 
-    System.out.println("""
-        \nHere are some keywords you can use throughout the game:
-                
-        look      = Looking around at the current location
-        go east   = Moves player towards east
-        go west   = Moves player towards west
-        go north  = Moves player towards north
-        go south  = Moves player towards south
-        help      = Opens help menu
-        exit      = Game terminates
-        """);
+    helpText();
   }
 
   void mainMenu() {
@@ -183,8 +173,7 @@ public class Adventure {
     playerName = playerName.toUpperCase();
   }
 
-  void help() {
-    System.out.println("\nHelp menu:");
+  void helpText() {
     System.out.println("""
                 
         Throughout the game you can write the following commands:
@@ -198,6 +187,12 @@ public class Adventure {
         exit      = Game terminates
                 
         """);
+
+  }
+
+  void helpMenu() {
+    System.out.println("\nHelp menu:");
+    helpText();
     System.out.println("""
         Return to Game [game]
         Return to Main menu [main]
@@ -275,7 +270,7 @@ public class Adventure {
           System.out.println(cantGo);
         }
       }
-      case "help", "h" -> help();
+      case "help", "h" -> helpMenu();
       case "exit" -> exit();
       default -> invalidAnswer();
     }
