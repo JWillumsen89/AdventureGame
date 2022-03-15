@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class Adventure {
@@ -23,6 +22,8 @@ public class Adventure {
   void createRooms() {
     String name;
     String description;
+
+    gameStartUp();
 
     //Room1
     name = "CAVE ENTRANCE";
@@ -261,7 +262,8 @@ public class Adventure {
   }
 
   void userInterface() {
-    String newLoc = "\n" + playerName + ", " + "You walked into a new location!";
+    String newLoc = "\n" + playerName + ", You walked into a new location!";
+    String cantGo = "you can't go that way";
 
     System.out.print("\n" + playerName + ", what do you want to do: ");
     String playerDecision = in.nextLine();
@@ -273,7 +275,7 @@ public class Adventure {
           System.out.println(newLoc);
           currentRoom = currentRoom.getNorth();
         } else {
-          System.out.println("You can't go that way");
+          System.out.println(cantGo);
         }
       }
       case "go south", "south", "go s", "s" -> {
@@ -281,7 +283,7 @@ public class Adventure {
           System.out.println(newLoc);
           currentRoom = currentRoom.getSouth();
         } else {
-          System.out.println("You can't go that way");
+          System.out.println(cantGo);
         }
       }
       case "go west", "west", "go w", "w" -> {
@@ -289,7 +291,7 @@ public class Adventure {
           System.out.println(newLoc);
           currentRoom = currentRoom.getWest();
         } else {
-          System.out.println("You can't go that way");
+          System.out.println(cantGo);
         }
       }
       case "go east", "east", "go e", "e" -> {
@@ -297,7 +299,7 @@ public class Adventure {
           System.out.println(newLoc);
           currentRoom = currentRoom.getEast();
         } else {
-          System.out.println("You can't go that way");
+          System.out.println(cantGo);
         }
       }
       case "help","h" -> help();
