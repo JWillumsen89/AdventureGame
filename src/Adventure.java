@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Adventure {
@@ -5,12 +6,13 @@ public class Adventure {
   private String playerName;
   Scanner in = new Scanner(System.in);
   private boolean gameRunning = true;
+  Environment environment = new Environment();
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
     new Adventure().go();
   }
 
-  void go() {
+  void go() throws IOException {
     createRooms();
     gameStartUp();
     mainMenu();
@@ -19,7 +21,7 @@ public class Adventure {
     }
   }
 
-  void createRooms() {
+  void createRooms() throws IOException {
     String name;
     String description;
 
@@ -27,9 +29,10 @@ public class Adventure {
 
     //Room1
     name = "CAVE ENTRANCE";
-    description = """
+    description = environment.descripRoom1();
+    /*description = """
         You have entered a dark cage with water dripping from the ceiling, shiny eyes in the distance from, what seems like hundreds of small animals, bats maybe!
-        There is also some noise, a distant growling and something that sounds like footsteps, but hard to tell what this is and where its coming from.""";
+        There is also some noise, a distant growling and something that sounds like footsteps, but hard to tell what this is and where its coming from.""";*/
     Room room1 = new Room(name, description);
 
     //Room 2
