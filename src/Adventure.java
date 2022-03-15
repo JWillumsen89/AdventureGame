@@ -6,7 +6,7 @@ public class Adventure {
   private String playerName;
   Scanner in = new Scanner(System.in);
   private boolean gameRunning = true;
-  Environment environment = new Environment();
+
 
   public static void main(String[] args) throws IOException {
     new Adventure().go();
@@ -24,7 +24,7 @@ public class Adventure {
   void createRooms() throws IOException {
     String name;
     String description;
-
+    Environment environment = new Environment();
     gameStartUp();
 
     //Room1
@@ -186,7 +186,7 @@ public class Adventure {
   void help() {
     System.out.println("\nHelp menu:");
     System.out.println("""
-        
+                
         Throughout the game you can write the following commands:
                 
         look      = Looking around at the current location
@@ -206,9 +206,9 @@ public class Adventure {
     String helpMenuDecision = in.nextLine();
     helpMenuDecision = helpMenuDecision.toLowerCase();
     switch (helpMenuDecision) {
-      case "game","g" -> userInterface();
-      case "main","m" -> mainMenu();
-      case "exit","e" -> exit();
+      case "game", "g" -> userInterface();
+      case "main", "m" -> mainMenu();
+      case "exit", "e" -> exit();
       default -> invalidAnswer();
     }
   }
@@ -275,7 +275,7 @@ public class Adventure {
           System.out.println(cantGo);
         }
       }
-      case "help","h" -> help();
+      case "help", "h" -> help();
       case "exit" -> exit();
       default -> invalidAnswer();
     }
