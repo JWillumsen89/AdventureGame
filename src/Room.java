@@ -1,12 +1,14 @@
 public class Room {
   private String roomName;
-  private String description;
+  private String roomDescription;
   private Room north;
   private Room south;
   private Room east;
   private Room west;
 
-  Room(String name, String description) {
+  Room(String name, String roomDescription) {
+    setRoomName(name);
+    setRoomDescription(roomDescription);
 
   }
 
@@ -16,6 +18,14 @@ public class Room {
 
   String getRoomName() {
     return roomName;
+  }
+
+  void setRoomDescription(String roomDescription) {
+    this.roomDescription = roomDescription;
+  }
+
+  String getRoomDescription() {
+    return roomDescription;
   }
 
   void setNorth(Room north) {
@@ -50,11 +60,8 @@ public class Room {
     return west;
   }
 
-  void setDescription() {
-    this.description = description;
-  }
-
-  String getDescription() {
-    return description;
+  @Override
+  public String toString() {
+    return roomName + "\n\n" + roomDescription;
   }
 }
